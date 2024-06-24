@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayGen.com - Upcoming Games</title>
+    <link rel="icon" type="image/x-icon" href="PlayGenFinalICO.jfif">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+    background-color: #0c0c0c; /* Dark background color */
+    background-image: url('backgroundimg.jpg'); /* Set background image */
+    background-size: cover; /* Ensure the background image covers the entire body */
+    background-position: center; /* Center the background image */
+    background-repeat: repeat; /* Repeat the background image */
+    color: #fff; /* White text color */
+    font-family: Arial, sans-serif; /* Set font family */
+    margin: 0; /* Remove margin */
+    padding: 50px; /* Add padding */
+    line-height: 1.6; /* Adjust line height for better readability */
+    margin-top: 100px; /* Adjust margin from the top */
+}
+
+
+        .header {
+            background-color: #333; /* Dark header background color */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: #fff; /* White color for logo */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social {
+            display: flex;
+        }
+
+        .social a {
+            color: #fff; /* White color for social media icons */
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .navbar {
+            display: flex;
+        }
+
+        .navbar a {
+            color: #fff; /* White color for navigation links */
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .profile-section {
+            padding: 80px 20px;
+            text-align: center;
+            margin-top: 200px; /* Adjusted to accommodate fixed header */
+        }
+
+        .profile-info, .game-stats, .achievements, .preferences {
+            margin-bottom: 40px;
+        }
+
+        .profile-info ul, .game-stats ul, .achievements ul, .preferences ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .profile-info h3, .game-stats h3, .achievements h3, .preferences h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #e50914; /* Red color for section headings */
+        }
+
+        .profile-info li, .game-stats li, .achievements li, .preferences li {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            background-color: #333; /* Dark footer background color */
+            color: #fff; /* White color for footer text */
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            bottom: 0;
+            position: fixed;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Set background color to black */
+            color: darkred; /* Set font color to dark red */
+            margin-top: 40px;
+        }
+        header {
+            background-color: darkred; /* Changed background color to dark red */
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        h2 {
+            margin-bottom: 10px;
+            color: darkred; /* Changed font color to dark red */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: darkred; /* Changed font color to dark red */
+            text-decoration: none;
+        }
+        a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+        img {
+            display: block;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        .card {
+            position: relative;
+            width: 300px;
+            height: 170px;
+            margin-bottom: 200px;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s; box-shadow: 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05); /* Increased scale on hover */
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Added box-shadow effect on hover */
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            position: absolute;
+            top: 10;
+            left: 0;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-content h3, .card-content p, .card-content .button {
+            margin: 0;
+        }
+
+        .button {
+            background-color: darkred; /* Changed button background color to dark red */
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #800000; /* Darken button color on hover */
+        }
+
+        .playgen {
+            position: absolute;
+            top: 50%;
+            right: 20%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            font-weight: bold;
+            font-family: 'Press Start 2P', cursive; /* Apply the Press Start 2P font */
+        }
+
+        .logo {
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social {
+            display: flex;
+        }
+
+        .social a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .navbar {
+            display: flex;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .community-section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .community-section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #e50914; /* Red color for gaming community header */
+        }
+
+        .community-section p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .community-links ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .community-links li {
+            margin: 0 10px;
+        }
+
+        .community-links a {
+            color: #e50914; /* Red color for gaming community links */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .community-links a:hover {
+            color: #ff6363; /* Lighter red color on hover */
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            bottom: 0;
+            position: fixed;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="PlayGen.html" class="logo">PlayGen</a>
+
+        <div class="social">
+            <a href="https://www.instagram.com//"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/ritik-khanna/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="signupin.html">SignUp/SignIn</a>
+            <a href="profile.html">Profile</a>
+            <a href="community.html">Community</a>
+            <a href="ese2.html">Upcoming Games</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <div class="playgen">PLAYGEN.</div>
+    <header>
+        <h1></h1>
+    </header>
+    <main>
+        <div class="card">
+            <div class="card-content">
+                <h3>Assassin's Creed III</h3>
+                <p></p>
+                <a href="https://en.wikipedia.org/wiki/Assassin%27s_Creed_III" target="_blank" class="button">Stay Tuned...</a>
+            </div>
+            <img src="connor.gif" alt="Connor">
+        </div>
+        
+        <div class="card">
+            <div class="card-content">
+                <h3>FORZA HORIZON</h3>
+                <p></p>
+                <a href="https://forza.net/horizon" target="_blank" class="button">Stay Tuned...</a>
+            </div>
+            <img src="car2.gif" alt="Car 2">
+        </div>
+        
+        <div class="card">
+            <div class="card-content">
+                <h3>Assassin's creed</h3>
+                <p></p>
+                <a href="https://en.wikipedia.org/wiki/Assassin%27s_Creed" target="_blank" class="button">Stay Tuned...</a>
+            </div>
+            <img src="altair.gif" alt="Altair">
+        </div>
+
+        <!-- Additional game cards -->
+
+        <div class="card">
+            <div class="card-content">
+                <h3>Elden Ring</h3>
+                <p></p>
+                <a href="https://en.bandainamcoent.eu/elden-ring/elden-ring" target="_blank" class="button">Stay Tuned...</a>
+            </div>
+            <img src="elder ring.gif" alt="Game 4">
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>TASM-2</h3>
+                <p></p>
+                <a href="https://en.wikipedia.org/wiki/The_Amazing_Spider-Man_2_(2014_video_game)" target="_blank" class="button">Stay Tuned...</a>
+            </div>
+            <img src="tasm2.webp" alt="Game 5">
+        </div>
+
+        <!-- New game card -->
+        
+        <div class="card">
+            <div class="card-content">
+                <h3>Spiderman-4</h3>
+                <p></p>
+                <a href="https://cancelled-games.fandom.com/wiki/Spider-man_4" target="_blank" class="button">Stay Tuned...</a>
+            </div>
+            <img src="spiderman ps5.gif" alt="Spiderman PS5">
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 PlayGen. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+

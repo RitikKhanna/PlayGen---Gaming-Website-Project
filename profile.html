@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayGen.com - Profile</title>
+    <link rel="icon" type="image/x-icon" href="PlayGenFinalICO.jfif">
+    <!-- Link to the correct CSS file name -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+    background-color: #0c0c0c; /* Set background color */
+    background-image: url('backgroundimg.jpg'); /* Set background image */
+    background-size: cover; /* Ensure the background image covers the entire body */
+    background-position: center; /* Center the background image */
+    background-repeat: repeat; /* Repeat the background image */
+    color: #fff; /* Set text color */
+    font-family: Arial, sans-serif; /* Set font family */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+    
+        .header {
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+    
+        .logo {
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    
+        .social {
+            display: flex;
+        }
+    
+        .social a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+    
+        .navbar {
+            display: flex;
+        }
+    
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        
+   .image-banner {
+    height: 280px; /* Adjusted height to make the banner smaller */
+    background-image: url('playgenbanner.png'); /* Replace 'playgenbanner.png' with the path to your image */
+    background-size: cover; /* Ensure the image covers the entire banner */
+    background-position: center; /* Center the image within the banner */
+    margin-top: 80px; /* Adjusted margin-top to create space between header and banner */
+    width: auto;
+}
+
+
+.profile-section {
+    padding: 20px; /* Adjusted padding */
+    text-align: center;
+    margin-top: 20px; /* Adjusted margin-top to reduce the gap */
+}
+
+    
+        .profile-info,
+        .game-stats,
+        .achievements,
+        .preferences {
+            margin-bottom: 40px;
+            text-align: center; /* Center-align content */
+        }
+    
+        .profile-info ul,
+        .game-stats ul,
+        .achievements ul,
+        .preferences ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        .profile-info h3,
+        .game-stats h3,
+        .achievements h3,
+        .preferences h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #e50914;
+        }
+    
+        .profile-info li,
+        .game-stats li,
+        .achievements li,
+        .preferences li {
+            font-size: 18px;
+            margin-bottom: 5px;
+            line-height: 1.6;
+        }
+    
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            bottom: 0;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="PlayGen.html" class="logo">PlayGen</a>
+
+        <div class="social">
+            <a href="https://www.instagram.com//"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/ritik-khanna/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="signupin.html">SignUp/SignIn</a>
+            <a href="profile.html">Profile</a>
+            <a href="community.html">Community</a>
+            <a href="ese2.html">Upcoming Games</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <div class="image-banner"></div> <!-- Image Banner Placeholder -->
+
+    <section class="profile-section">
+        <h1 style="font-size: 50px;">Welcome to Your Gaming Profile</h1><br>
+        <p style="font-size: 15px;">Manage your gaming account details and preferences here. Keep track of your achievements, game progress, and more.</p>
+        <!-- Profile Info -->
+        <div class="profile-info">
+            <h3>Player Details</h3>
+            <ul>
+                <li><strong>Username:</strong> gamer123</li>
+                <li><strong>Email:</strong> gamer123@example.com</li>
+                <li><strong>Level:</strong> 25</li>
+                <li><strong>Experience:</strong> 5000 XP</li>
+                <!-- Additional player details -->
+                <li><strong>Preferred Genre:</strong> Action</li>
+                <li><strong>Favorite Game:</strong> OSU</li>
+            </ul>
+        </div>
+        <!-- Game Statistics -->
+        <div class="game-stats">
+            <h3>Game Statistics</h3>
+            <ul>
+                <li><strong>Total Games Played:</strong> 100</li>
+                <li><strong>Wins:</strong> 50</li>
+                <li><strong>Losses:</strong> 30</li>
+                <li><strong>Winning Percentage:</strong> 50%</li>
+                <!-- Additional game statistics -->
+                <li><strong>Average Score:</strong> 75</li>
+                <li><strong>Longest Winning Streak:</strong> 10 games</li>
+            </ul>
+        </div>
+        <!-- Achievements Section -->
+        <div class="achievements">
+            <h3>Achievements</h3>
+            <ul>
+                <li><strong>Completionist:</strong> Completed all levels of 5 different games</li>
+                <li><strong>Master Gamer:</strong> Achieved level 50 in any game</li>
+                <li><strong>Speedrunner:</strong> Completed a game in record time</li>
+                <!-- Add more achievements as needed -->
+            </ul>
+        </div>
+        <!-- Preferences Section -->
+        <div class="preferences">
+            <h3>Preferences</h3>
+            <p style="font-size: 15px;">Customize your gaming experience:</p>
+            <ul>
+                <li><strong>Language:</strong> English</li>
+                <li><strong>Sound:</strong> On</li>
+                <li><strong>Notifications:</strong> Enabled</li>
+                <!-- Add more preferences options -->
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 PlayGen. All rights reserved.</p>
+    </footer>
+</body>
+</html>
